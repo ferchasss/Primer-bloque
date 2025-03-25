@@ -1,0 +1,205 @@
+/*
+* Normalize.css
+* A modern, HTML5-ready alternative to CSS resets
+* @see: https://necolas.github.io/normalize.css 
+*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('scroll.css');
+
+html {
+    /* 
+    * box-sizing
+    * default: 'box-sizing: content-box'
+    * @see: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing 
+    */
+    box-sizing: border-box;
+    background-color: #8086F2;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+:root {
+    --bg-color: #D97823;
+    --text-color: #1a1a1a;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/* Modo dark detectado por media query */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --text-color: #ffffff;
+    }
+}
+body {
+    display: flex;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* mobile. Tamaño mínimo recomendado */
+    font-size: 14px;
+    line-height: 1.4em;
+    overflow-x: hidden;
+   
+}
+@media  and (max-width: 600px) {
+    body{
+        background-size: cover;
+    }
+}
+/* Laptop / Tablet */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+a.box-link {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-transform: uppercase;
+    min-width: 42px;
+    background-color: #fff;
+    transition: all 300ms ease-out;
+    display: flex;
+    flex-direction: column; /* Para que los botones se apilen verticalmente */
+    align-items: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espacio entre botones */
+    width: 100%;
+    background-color: #777CD9;
+    margin-top: 2vh;
+    margin-bottom: 20px;
+}
+
+a.box-link:hover {
+    transition: all 100ms ease-in;
+    filter: invert(1);
+}
+
+a.active {
+    pointer-events: none;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+p {
+    max-width: 80ch; /* Ancho máximo basado en el ancho del carácter "0" */
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 1em;
+    width: 90%;
+    min-width: 290px;
+    max-width: 1200px;
+    background-color:var(--bg-color);
+
+    
+}
+.perfil {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+   
+   object-fit: cover;
+   display: block;
+   margin-top: 3vh;
+  padding: 20px;
+   
+   margin: 0 auto 20px auto;
+}
+.cajaiconos {
+    color: var(--bg-color);
+    
+}
+
+.botones {
+    background-color: var(--bg-color);
+    color: #8086F2;
+    cursor: pointer;
+}
+
+nav.container {
+    padding: 1em;
+}
