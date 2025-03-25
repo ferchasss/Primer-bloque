@@ -10,54 +10,55 @@
     <link rel="manifest" href="./favicon/site.webmanifest" />
     <!-- Open Graph Metadata -->
     <meta property="og:title" content="My linktree">
-    <meta property="og:description" content="Una pagina que reune todos mis enlaces sociales">
+    <meta name="description" content="Página personal con enlaces a redes sociales y contacto.">
     <meta property="og:url" content="https://github.com/ferchasss/html-starter/">
     <meta property="og:type" content="website">
     <!-- favicon -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/custom.css">
     <script src="https://kit.fontawesome.com/228b946026.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            text-align: center;
-    
-        }
-    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/nfi4fvs.css">
+    <link rel="icon" href="favicon/favicon.ico" sizes="16x16 32x32">
+    <link rel="stylesheet" href="https://use.typekit.net/nfi4fvs.css">
+    <link rel="author" href="humans.txt">
+    <meta name="description" content="Página personal con enlaces a redes sociales y contacto.">
 </head>
 
 <body>
     <header>
        
         <div class="container">
-            
-            <img src="img/yo-img.jpg" alt="foto perfil" class="perfil">
+            <picture>
+                <source srcset="img/yo-img.webp" type="image/webp">
+            <img src="img/yo-img.jpg" alt="foto perfil de Fernanda Martinez" class="perfil">
+            </picture>
         </div>
     </header>
     <main class="container">
         <!-- Contenido -->
         <section>
-            <header>
-                <h2>Fernanda Martinez</h2>
-            </header>
+          
+                <h2>FERNANDA MARTINEZ</h2>
+          
             <p>DESINGER</p>
             <div class="cajaiconos">
                 <a href="tel:+7713790219">
-                    <button class="botones"> 
+                    <button class="botones"title="llamar por telefono"> 
                         <i class="fa-solid fa-phone"></i>
                  </button>
                 </a>
             <a href="sms:+7713790219">
-                <button class="botones">
-                <i class="fa-solid fa-message"></i>
+                <button class="botones" title="mandar wsp">
+                    <i class="fa-brands fa-whatsapp"></i>
                 </button>
             </a>
             <a href="https://www.instagram.com/fer.martinezp_/?hl=es-mx">
-                 <button class="botones">
-                    <i class="fa-solid fa-hashtag"></i>
+                 <button class="botones" title=" instagram de fer">
+                    <i class="fa-brands fa-instagram"></i>
                 </button>
              </a>
              <a href="mailto:tuemail@example.com">
-            <button class="botones">
+            <button class="botones" title="mandar correo">
                 <i class="fa-solid fa-envelope"></i>
             </button>
         </a>
@@ -65,8 +66,9 @@
         </section>
         <div>
             <a href="https://www.behance.net/mariafmartine50" class="box-link" target="_blank" title="Behance" >Behance</a>
-            <a href="https://github.com/ferchasss" class="box-link" title="github">Github</a>
-            <a href="https://open.spotify.com/user/12186953583?si=98c234a714df4ad9" class="box-link" title="spotify">Spotify</a>
+            <a href="https://github.com/ferchasss" class="box-link"  target="_blank" title="github">Github</a>
+            <a href="https://open.spotify.com/user/12186953583?si=98c234a714df4ad9" class="box-link"  target="_blank" title="spotify">Spotify</a>
+            <a href="https://www.tiktok.com/@marafernandam?_t=ZM-8uyt4Rx4haZ&_r=1" class="box-link"  target="_blank" title="tiktok">Tiktok</a>
         </div>
     </main>
     <footer>
