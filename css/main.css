@@ -27,6 +27,7 @@ html {
 :root {
     --bg-color: #D97823;
     --text-color: #1a1a1a;
+    --color:#777CD9;
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 /* Modo dark detectado por media query */
@@ -137,7 +138,7 @@ a.box-link {
     align-items: center; /* Centra los botones horizontalmente */
     gap: 20px; /* Espacio entre botones */
     width: 100%;
-    background-color: #777CD9;
+    background-color:var(--color);
     margin-top: 2vh;
     margin-bottom: 20px;
 }
@@ -196,8 +197,9 @@ p {
 
 .botones {
     background-color: var(--bg-color);
-    color: #8086F2;
+    color: var(--color);
     cursor: pointer;
+    border: none;
 }
 
 nav.container {
